@@ -1,0 +1,39 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "synapseNamePrefix": {
+            "value": "ldcdapukssyn" 
+        },
+        "defaultStorageName": {
+            "value": "ldcdapuksprstg" 
+        },
+        "defaultStorageContainerName": {
+            "value": "synapsedefault" 
+        },
+        "location": {
+            "value": "australiaeast" 
+        },
+        "grantWorkspaceMIControlOnSqlPool": {
+            "value": true
+        },
+        "firewallStartEndIPRanges": {
+            "value": [ "0.0.0.0,255.255.255.255" ]
+        },        
+        "sparkDeployment": {
+            "value": "false"
+        },
+        "sparkNodeSize": {
+            "value": "Small"
+        },
+        "sqlAdministratorLogin": {
+            "value": "sqladmin" 
+        },
+        "sqlAdministratorLoginPassword": {
+            "value": "Westham100%"
+        },
+        "sku": {
+            "value": "DW100c"
+        }
+    }
+}
