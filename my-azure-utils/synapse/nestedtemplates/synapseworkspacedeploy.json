@@ -8,6 +8,9 @@
         "defaultStorageName": {
             "type": "string"
         },
+        "environment": {
+            "type": "string"
+        },
         "defaultStorageContainerName": {
             "type": "string"
         },
@@ -84,9 +87,9 @@
     "variables": {
         "defaultApiVersion": "2021-06-01-preview",
         "storageApiVersion": "2021-04-01",
-        "workspaceName": "[toLower(concat(parameters('synapseNamePrefix'), 'ws'))]",
-        "sqlPoolName": "[toLower(concat(parameters('synapseNamePrefix'), 'sql'))]",
-        "sparkPoolName": "[toLower(concat(parameters('synapseNamePrefix'), 'spk'))]",
+        "workspaceName": "[toLower(concat(parameters('synapseNamePrefix'), 'ws',parameters('environment')))]",
+        "sqlPoolName": "[toLower(concat(parameters('synapseNamePrefix'), 'sql',parameters('environment')))]",
+        "sparkPoolName": "[toLower(concat(parameters('synapseNamePrefix'), 'spk',parameters('environment')))]",
         "storageBlobDataContributorRoleId": "ba92f5b4-2d11-453d-a403-e96b0029c9fe",
         "sparkVersion": "3.4"
 
