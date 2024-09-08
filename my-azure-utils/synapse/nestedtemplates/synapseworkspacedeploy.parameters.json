@@ -5,6 +5,9 @@
         "synapseNamePrefix": {
             "value": "ldcdapukssyn" 
         },
+        "environment": {
+            "value": "dev" 
+        },
         "defaultStorageName": {
             "value": "ldcdapuksprstg" 
         },
